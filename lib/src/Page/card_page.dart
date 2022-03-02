@@ -33,14 +33,14 @@ class CardPage extends StatelessWidget {
 
   Widget _cardTipo1() {
     return Card(
-      elevation: 10.0,
+      elevation: 9.0,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
       child: Column(
         children: <Widget>[
           ListTile(
             leading: Icon(Icons.photo_album, color: Colors.blue),
             title: Text('Soy el título de esta tarjeta'),
-            subtitle: Text('Este es un ejemplo de subtitulo'),
+            subtitle: Text('Ejemplo subtitulo de la tarjeta '),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
@@ -67,17 +67,17 @@ class CardPage extends StatelessWidget {
           FadeInImage(
             image: NetworkImage(
                 'https://www.eluniversal.com.mx/sites/default/files/2015/06/10/noche_estrellada_entender_arte_st.jpg'),
-            placeholder: AssetImage('assets/loading.gif'),
+            placeholder: AssetImage('assets/17.1 jar-loading.gif'),
             fadeInDuration: Duration(milliseconds: 200),
-            height: 300.0,
+            height: 350.0,
             fit: BoxFit.cover,
           ),
           // Image(
-          //  image: NetworkImage('https://www.creativefabrica.com/wp-content/uploads/2021/06/12/mountain-landscape-illustration-design-b-Graphics-13326021-1.jpg'),
+          //  image: NetworkImage(''),
           // ),
           Container(
             padding: EdgeInsets.all(10.0),
-            child: Text('Este es un ejemplo de pie de imagen'),
+            child: Text('Ejemplo pie de imagen'),
           )
         ],
       ),
@@ -85,11 +85,11 @@ class CardPage extends StatelessWidget {
 
     return Container(
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(30.0),
-          color: Color.fromARGB(255, 243, 209, 219),
+          borderRadius: BorderRadius.circular(27.0),
+          color: Color.fromARGB(230, 63, 166, 250),
           boxShadow: <BoxShadow>[
             BoxShadow(
-              color: Colors.black26,
+              color: Color.fromARGB(66, 17, 17, 17),
               blurRadius: 10.0,
               spreadRadius: 2.0,
               offset: Offset(2.0, 10.0),
